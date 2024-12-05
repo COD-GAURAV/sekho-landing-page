@@ -1,0 +1,320 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* display: flex; */
+   
+}
+
+
+.nav{
+    height: 10vh;
+    width: 100vw;
+    /* background-color: beige; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading1{
+    padding-left: 6vw;
+    font-size: 2vw;
+    font-weight: 700;
+    color:gray;
+    cursor: pointer;
+
+}
+
+.menu{
+    display: flex;
+    gap: 3vw;
+    padding-right: 6vw;
+    
+}
+
+a{
+    text-decoration: none;
+    color:gray;
+    font-weight: 700;
+}
+
+
+.menu-botton{
+    display: none;
+}
+
+.menu1{
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+
+.main{
+    display: flex;
+}
+
+
+.left{
+    height: calc(100vh - 10vh);
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 4vw 4.5vw; */
+    /* background-color: blanchedalmond; */
+    
+}
+
+
+.right{
+    height: calc(100vh - 10vh);
+    width: 50%;
+    /* background-color: beige; */
+   ;
+
+}
+
+.right-background{
+   height: 99%;
+   /* width: 100%; */
+}
+
+.heading2{
+    height: 60%;
+    width: 70%;
+    color:gray;
+    font-size: 10vw;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+h2{
+    font-size: 2vw;
+}
+
+
+span{
+    color: crimson;
+}
+
+.sign-in{
+    background-color: chocolate;
+}
+
+.button,.sign-in{
+    /* margin-bottom: 5vh; */
+    /* background-color: chocolate; */
+    padding: 1vw 1.2vw;
+    border: none;
+    color: honeydew;
+    font-weight: 200;
+    border-radius: 0.1vh;
+    cursor: pointer;
+    font-size: 1vw;
+
+}
+
+.fa-facebook{
+    color: blue;
+}
+
+.fa-instagram{
+    color: rgb(188, 40, 176);
+}
+
+
+
+@media (max-width : 600px) {
+    .nav{
+        background-color: navy;
+    }
+
+    .heading1{
+        color: beige;
+        font-size: 4vw;
+    }
+
+    .heading2{
+        font-size: 4vw;
+        padding-top: 6vh;
+    }
+    
+    .menu-botton{
+        display: block;
+        font-size: 4vw;
+        color: beige;
+    }
+
+    .home {
+        display: none;
+    }
+
+    .about {
+        display: none;
+    }
+
+    .contact{
+        display: none;
+    }
+
+    .insta{
+        display: none;
+    }
+
+    .facebook{
+        display: none;
+    }
+
+    /* .container{
+        display: none;
+    } */
+  
+}
+
+
+@media (max-width : 1375px){
+    .right-background{
+        height: 75vh;
+    }
+}
+
+/* @media (max-width : 1375px){
+    .right-background{
+        height: 65vh;
+    }
+} */
+
+@media (max-width : 1158px)
+{
+    .right-background{
+        height: 70vh;
+    }
+}
+
+@media (max-width : 1082px)
+{
+    .right-background{
+        height: 65vh;
+    }
+}
+
+@media (max-width : 1006px){
+    .right-background{
+        height: 60vh;
+    }
+}
+
+@media (max-width : 927px){
+    .right-background{
+        height: 55vh;
+    }
+}
+
+@media (max-width : 850px){
+    .main{
+        display: block;
+    }
+    .left{
+       width: 100vw;
+       background-image: url(/background.jpg);
+       background-size: 55%;
+       background-repeat: no-repeat;
+       padding-top: 3vw;
+       background-position: center;
+       text-align: center;
+    }
+    .heading2{
+       font-size: 2vw;
+       margin-bottom: 300px;
+    }
+
+    .sign-in{
+        font-size: 3vh;
+        
+    
+    }
+
+    .right{
+        display: none;
+    }
+
+    .button{
+        padding-top: 55vh;
+    }
+
+
+}
+
+
+@media (max-width : 684px){
+    .heading1{
+        font-size: 5vw;
+    }
+
+    .menu1{
+        font-size: 3vw;
+    }
+
+}
+
+@media (max-width : 912px){
+    .right-background{
+        height: 35vh;
+    }
+}
+
+@media (max-width : 851px)
+{
+    .right{
+        display: none;
+    }
+}
+
+
+/* @media (max-height : 1368px){
+    .right-background{
+        height: 35vh;
+    }
+} */
+
+@media (max-height : 720px){
+    .heading2{
+        font-size: 1.5vh;
+        padding-top: 4vh;
+    }
+
+}
+
+
+.sign-in:hover{
+    background-color: brown;
+    /* padding: 1.2vw 1.6vw; */
+    transition: 0.2s ease-in-out;
+}
+
+.sign-in:active{
+    background-color: white;
+    color: black;
+    transition: 0.2s ease-in-out;
+    
+}
+
+
+a:hover{
+    color: brown;
+    transition: 0.2s ease-in-out;
+}
+
+.heading1:hover{
+    color: brown;
+    transition: 0.2s ease-in-out;
+}
+
+
