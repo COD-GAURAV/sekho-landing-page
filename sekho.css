@@ -223,7 +223,7 @@ span{
     }
     .left{
        width: 100vw;
-       background-image: url(/background.jpg);
+       background-image: url("background.jpg");
        background-size: 55%;
        background-repeat: no-repeat;
        padding-top: 3vw;
